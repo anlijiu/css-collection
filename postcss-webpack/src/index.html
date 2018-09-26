@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <item>item1</item>
+      </nav>
+    </header>
+    <div class="banner parallax-container">
+      <div class="parallax">
+        <img src="images/background1.jpg"></img>
+      </div>
+    </div>
+    <div class="section1">
+      <h1 class="center">H1 test</h1>
+      <p>
+        We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+      </p>
+    </div>
+    <div class="section2">
+      <h1 class="center">H1 test</h1>
+      <p>
+        We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+      </p>
+    </div>
+    <div class="section3">
+      <h1 class="center">H1 test</h1>
+      <p>
+        We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+      </p>
+    </div>
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %><script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script><% } %>
+  </body>
+</html>

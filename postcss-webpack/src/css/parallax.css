@@ -1,0 +1,27 @@
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  position: relative;
+  overflow: hidden;
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    img {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translateX(-50%);
+      transform: translate3d(-50%, 177.958px, 0px); opacity: 1;
+    }   
+  }
+}
+
+
