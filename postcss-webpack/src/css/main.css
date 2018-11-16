@@ -11,6 +11,7 @@ html {
   box-sizing: inherit;
 }
 
+
 :root {
   font-size: calc(1vw + 1vh + .5vmin);
   --heading-color: #fff000;
@@ -30,5 +31,115 @@ body {
 /* usage */
 :--headings { 
   color: var(--heading-color);
+  text-align: center;
 }
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+/*this is base*/
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: .83rem;
+}
+h6 {
+  font-size: .75rem;
+}
+
+.authentication {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login-with-email {
+  width: 300px;
+}
+
+.login-with-social {
+  width: 300px;
+  span {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .21px;
+    margin-left: 6px;
+    margin-right: 6px;
+    vertical-align: top;
+    line-height: 48px;
+  }
+  .buttonWrapper {
+    width: 300px;
+    text-align: center;
+    white-space: nowrap;
+    * + * {   margin-top: 1rem; }
+  }
+}
+
+.divide {
+  width: 1px;
+  opacity: .8;
+  background-color: #858f96;
+  margin: 0 71px;
+}
+
+.buttonIcon {
+  float: left;
+  background-color: #fff;
+  border-radius: 1px;
+}
+
+.github_button {
+  background-color: #3b5998;
+  border: 1px solid transparent;
+  color: #fff;
+  .buttonSvgImg {
+    width: 15px;
+    height: 27px;
+    background: url(../svg/facebook-logo.svg);
+    background-size: 100%;
+  }
+
+  .buttonIcon {
+    padding: 9px 15px 12px 16px;
+  }
+}
+
+.wechat_button {
+  background-color: #11cd6e;
+  border: 1px solid transparent;
+  color: #fff;
+  .buttonSvgImg {
+    width: 24px;
+    height: 24px;
+    background: url(../svg/wechat-logo.svg);
+    background-size: 100%;
+  }
+  .buttonIcon {
+    padding: 11px 11px 12px 11px;
+  }
+}
+
+a.github_oauth_button { background:url(../svg/facebook-logo.svg) repeat 0px 0px; width: 123px; height: 44px; display: block; }  
+a.github_oauth_button span { display: none; }  
+a.github_oauth_button :hover { background: url(../svg/facebook-logo.svg) repeat 0px -44px; }
 

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
@@ -10,29 +11,101 @@
         <item>item1</item>
       </nav>
     </header>
-    <div class="banner parallax-container">
-      <div class="parallax">
-        <img src="images/background1.jpg"></img>
-      </div>
+
+
+    <div class="banner">
+      <h1>标题一标题一标题一标题一标题</h1>
+      <h2>标题2标题2标题2标题2</h2>
+      <h3>标题3标题3标题3标题3标题3标题3标题3标题3标题3</h3>
     </div>
+
+    <div class="authentication">
+      <form class="form-container">
+        <div class="login-title">Log In</div>
+        <div class="new-user ng-binding"> New to xxx?
+          <a class="signup-link ng-binding" href="" ng-click="$ctrl.onClickSignup()">Sign Up</a>
+        </div>
+        <div class="login-section">
+          <div class="login-with-email ">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="divide"></div>
+          <div class="login-with-social">
+            <div class="buttonWrapper github_button">
+              <div class="buttonIcon">
+                <div class="buttonSvgImg">
+                </div>
+              </div>
+              <span>login with github</span>
+            </div>
+            <div class="buttonWrapper wechat_button">
+              <div class="buttonIcon">
+                <div class="buttonSvgImg">
+                </div>
+              </div>
+              <span>login with wechat</span>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
     <div class="section1">
-      <h1 class="center">H1 test</h1>
+      <h1 class="center">section1</h1>
       <p>
         We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
       </p>
     </div>
     <div class="section2">
-      <h1 class="center">H1 test</h1>
+      <h1 class="center">section2</h1>
       <p>
         We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
       </p>
     </div>
     <div class="section3">
-      <h1 class="center">H1 test</h1>
+      <h1 class="center">section3</h1>
       <p>
         We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
       </p>
     </div>
+    <div class="section4">
+      <h1 class="center">section4</h1>
+      <p>
+        We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+      </p>
+    </div>
+    <div class="section5">
+      <h1 class="center">section5</h1>
+      <p>
+        We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+      </p>
+    </div>
+    <div class="section6">
+      <h1 class="center">section6</h1>
+      <p>
+        We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.
+      </p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.1.0.js"
+      integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+      crossorigin="anonymous">
+    </script>
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %><script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script><% } %>
+
+    <script src="public/particles.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

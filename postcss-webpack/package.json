@@ -27,7 +27,9 @@
     "cssnano": "^3.10.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "import-glob-loader": "^1.1.0",
+    "materialize-css": "^1.0.0-rc.2",
     "pleeease-filters": "^4.0.0",
+    "svg-url-loader": "^2.3.2",
     "uglifyjs-webpack-plugin": "^1.2.3",
     "upath": "^1.1.0"
   },
@@ -64,6 +66,7 @@
     "babel-loader": "^8.0.2",
     "babel-preset-airbnb": "^2.6.0",
     "browser-sync": "^2.23.6",
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^0.28.10",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
@@ -98,7 +101,6 @@
     "webpack-dev-server": "^3.1.9",
     "webpack-merge": "^4.1.4",
     "webpack-notifier": "^1.6.0",
-    "copy-webpack-plugin": "^4.5.2",
     "write-file-webpack-plugin": "^4.2.0"
   },
   "browserslist": [

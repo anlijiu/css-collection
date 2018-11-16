@@ -56,29 +56,9 @@ module.exports = {
               },
             ],
           },
-
-          // Or return public URL to image resource
-          {
-            loader: 'file-loader',
-            options: {
-              name: staticAssetName,
-            },
-          },
         ],
       },
 
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'images/'
-            }
-          }
-        ]
-      }
     ]
   },
   output: {
@@ -92,6 +72,11 @@ module.exports = {
       title: '主页',
       filename: 'index.html',
       template: 'src/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: '登录',
+      filename: 'login.html',
+      template: 'src/login.html',
     }),
     // Set jQuery in global scope
     // https://webpack.js.org/plugins/provide-plugin/
